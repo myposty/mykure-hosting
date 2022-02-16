@@ -351,16 +351,22 @@ header.scroll-down {
             width: 500px;
             height: 250px;
             overflow: hidden;
+            img{
+              width: 500px;
+              height: 250px;
+              object-fit: cover;
+            }
           }
           .plan-content {
-            width: 500px;
+            width: 450px;
             height: 250px;
             box-sizing: border-box;
-            padding: 10px;
+            padding: 20px;
             h3 {
               @include text(color-spotify-verde-hex);
             }
             p {
+              text-align: justify;
               @include text(color-spotify-blanco-hex);
             }
             .plan-link {

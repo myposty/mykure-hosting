@@ -656,12 +656,19 @@ header.scroll-down {
   overflow: hidden;
 }
 
-.plan-servicio .servicio-container .planes-container .plan-grid .plan-col .plan-content {
+.plan-servicio .servicio-container .planes-container .plan-grid .plan-col .plan-img img {
   width: 500px;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.plan-servicio .servicio-container .planes-container .plan-grid .plan-col .plan-content {
+  width: 450px;
   height: 250px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 10px;
+  padding: 20px;
 }
 
 .plan-servicio .servicio-container .planes-container .plan-grid .plan-col .plan-content h3 {
@@ -669,6 +676,7 @@ header.scroll-down {
 }
 
 .plan-servicio .servicio-container .planes-container .plan-grid .plan-col .plan-content p {
+  text-align: justify;
   color: #ffffff;
 }
 
