@@ -456,6 +456,7 @@ header.scroll-down {
 
 .section-home {
   /* background: red; */
+  margin-top: 50px;
   width: 100%;
   height: auto;
   display: -webkit-box;
@@ -476,7 +477,7 @@ header.scroll-down {
 .section-home .section-home-container {
   /* background: chartreuse; */
   width: 100%;
-  height: 980px;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -495,6 +496,8 @@ header.scroll-down {
 
 .section-home .section-home-container .section-home-img {
   position: relative;
+  width: 200px;
+  height: 200px;
 }
 
 .section-home .section-home-container .section-home-img::before {
@@ -504,6 +507,11 @@ header.scroll-down {
   height: 100%;
   top: 0;
   left: 0;
+}
+
+.section-home .section-home-container .section-home-img img {
+  width: 200px;
+  height: 200px;
 }
 
 .section-home .section-home-container .section-home-desc h1 {
@@ -531,11 +539,14 @@ header.scroll-down {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #268a69;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.15)), to(rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  background-color: #268a69;
   color: #191919;
 }
 
 .service .service-bg h1 {
+  text-align: center;
   font-size: 45px;
 }
 
@@ -550,6 +561,173 @@ header.scroll-down {
 
 .service .service-content p {
   text-align: justify;
+}
+
+.plan-servicio {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.plan-servicio .servicio-container {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  /* background: red; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.plan-servicio .servicio-container h2 {
+  text-align: center;
+  font-size: 45px;
+}
+
+.plan-servicio .servicio-container .planes-container {
+  /* background: chartreuse; */
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.plan-servicio .servicio-container .planes-container .plan-grid {
+  width: 100%;
+  height: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.plan-servicio .servicio-container .planes-container .plan-grid .plan-col {
+  margin: 20px;
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.15)), to(rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  background-color: #191919;
+  -webkit-box-shadow: 8px 8px 0px rgba(25, 25, 25, 0.3);
+          box-shadow: 8px 8px 0px rgba(25, 25, 25, 0.3);
+  border-radius: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-clip: content-box;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+
+.plan-servicio .servicio-container .planes-container .plan-grid .plan-col .plan-img {
+  width: 500px;
+  height: 250px;
+  overflow: hidden;
+}
+
+.plan-servicio .servicio-container .planes-container .plan-grid .plan-col .plan-content {
+  width: 500px;
+  height: 250px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+}
+
+.plan-servicio .servicio-container .planes-container .plan-grid .plan-col .plan-content h3 {
+  color: #268a69;
+}
+
+.plan-servicio .servicio-container .planes-container .plan-grid .plan-col .plan-content p {
+  color: #ffffff;
+}
+
+.plan-servicio .servicio-container .planes-container .plan-grid .plan-col .plan-content .plan-link {
+  width: 100px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.15)), to(rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  background-color: #268a69;
+  color: #ffffff;
+  border-radius: 20px;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+
+.plan-servicio .servicio-container .planes-container .plan-grid .plan-col .plan-content .plan-link:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.15)), to(rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  background-color: #919191;
+  -webkit-box-shadow: 0px 10px 15px -3px rgba(255, 255, 255, 0.1);
+          box-shadow: 0px 10px 15px -3px rgba(255, 255, 255, 0.1);
+}
+
+.plan-servicio .servicio-container .planes-container .plan-grid .plan-col .plan-content .plan-content-service .fa-star,
+.plan-servicio .servicio-container .planes-container .plan-grid .plan-col .plan-content .plan-content-service .fa-star-half {
+  color: #ffbf00;
+}
+
+.plan-servicio .servicio-container .planes-container .plan-grid .plan-col .plan-content .plan-content-service .fa-server,
+.plan-servicio .servicio-container .planes-container .plan-grid .plan-col .plan-content .plan-content-service .fa-database,
+.plan-servicio .servicio-container .planes-container .plan-grid .plan-col .plan-content .plan-content-service .fa-exchange-alt {
+  color: #8e9aaf;
+}
+
+.plan-servicio .servicio-container .planes-container .plan-grid .plan-col .plan-content .plan-content-service .fa-expeditedssl {
+  color: #04e762;
+}
+
+.plan-servicio .servicio-container .planes-container .plan-grid .plan-col .plan-content .plan-precio h4 {
+  color: #ffffff;
+}
+
+.plan-servicio .servicio-container .planes-container .plan-grid .plan-col:hover {
+  -webkit-box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.2), inset 0px 0px 7px 1px rgba(255, 255, 255, 0.2);
+          box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.2), inset 0px 0px 7px 1px rgba(255, 255, 255, 0.2);
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 
 .contacto {
@@ -732,172 +910,6 @@ header.scroll-down {
 .contacto .contact-container .contact-container-rows .contact-send input:active {
   -webkit-box-shadow: 0px 0px 7px 5px #268a69;
           box-shadow: 0px 0px 7px 5px #268a69;
-}
-
-.plan-servicio {
-  width: 100%;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.plan-servicio .servicio-container {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  /* background: red; */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.plan-servicio .servicio-container h2 {
-  font-size: 45px;
-}
-
-.plan-servicio .servicio-container .planes-container {
-  /* background: chartreuse; */
-  width: 100%;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.plan-servicio .servicio-container .planes-container .plan-grid {
-  width: 100%;
-  height: auto;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.plan-servicio .servicio-container .planes-container .plan-grid .plan-col {
-  margin: 20px;
-  width: 500px;
-  height: 500px;
-  overflow: hidden;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.15)), to(rgba(255, 255, 255, 0)));
-  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-  background-color: #191919;
-  -webkit-box-shadow: 8px 8px 0px rgba(25, 25, 25, 0.3);
-          box-shadow: 8px 8px 0px rgba(25, 25, 25, 0.3);
-  border-radius: 30px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  background-clip: content-box;
-  -webkit-transition: all ease-in-out 0.3s;
-  transition: all ease-in-out 0.3s;
-}
-
-.plan-servicio .servicio-container .planes-container .plan-grid .plan-col .plan-img {
-  width: 500px;
-  height: 250px;
-  overflow: hidden;
-}
-
-.plan-servicio .servicio-container .planes-container .plan-grid .plan-col .plan-content {
-  width: 500px;
-  height: 250px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 10px;
-}
-
-.plan-servicio .servicio-container .planes-container .plan-grid .plan-col .plan-content h3 {
-  color: #268a69;
-}
-
-.plan-servicio .servicio-container .planes-container .plan-grid .plan-col .plan-content p {
-  color: #ffffff;
-}
-
-.plan-servicio .servicio-container .planes-container .plan-grid .plan-col .plan-content .plan-link {
-  width: 100px;
-  height: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  justify-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: center;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.15)), to(rgba(255, 255, 255, 0)));
-  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-  background-color: #268a69;
-  color: #ffffff;
-  border-radius: 20px;
-  -webkit-transition: all ease-in-out 0.3s;
-  transition: all ease-in-out 0.3s;
-}
-
-.plan-servicio .servicio-container .planes-container .plan-grid .plan-col .plan-content .plan-link:hover {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.15)), to(rgba(255, 255, 255, 0)));
-  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-  background-color: #919191;
-  -webkit-box-shadow: 0px 10px 15px -3px rgba(255, 255, 255, 0.1);
-          box-shadow: 0px 10px 15px -3px rgba(255, 255, 255, 0.1);
-}
-
-.plan-servicio .servicio-container .planes-container .plan-grid .plan-col .plan-content .plan-content-service .fa-star,
-.plan-servicio .servicio-container .planes-container .plan-grid .plan-col .plan-content .plan-content-service .fa-star-half {
-  color: #ffbf00;
-}
-
-.plan-servicio .servicio-container .planes-container .plan-grid .plan-col .plan-content .plan-content-service .fa-server,
-.plan-servicio .servicio-container .planes-container .plan-grid .plan-col .plan-content .plan-content-service .fa-database,
-.plan-servicio .servicio-container .planes-container .plan-grid .plan-col .plan-content .plan-content-service .fa-exchange-alt {
-  color: #8e9aaf;
-}
-
-.plan-servicio .servicio-container .planes-container .plan-grid .plan-col .plan-content .plan-content-service .fa-expeditedssl {
-  color: #04e762;
-}
-
-.plan-servicio .servicio-container .planes-container .plan-grid .plan-col .plan-content .plan-precio h4 {
-  color: #ffffff;
-}
-
-.plan-servicio .servicio-container .planes-container .plan-grid .plan-col:hover {
-  -webkit-box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.2), inset 0px 0px 7px 1px rgba(255, 255, 255, 0.2);
-          box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.2), inset 0px 0px 7px 1px rgba(255, 255, 255, 0.2);
-  -webkit-transform: translateY(-5px);
-          transform: translateY(-5px);
 }
 
 footer {

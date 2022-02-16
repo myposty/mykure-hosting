@@ -228,6 +228,7 @@ header.scroll-down {
 //=======section Home========
 .section-home {
   /* background: red; */
+  margin-top: 50px;
   width: 100%;
   height: auto;
   display: flex;
@@ -237,7 +238,7 @@ header.scroll-down {
   .section-home-container {
     /* background: chartreuse; */
     width: 100%;
-    height: 980px;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -245,9 +246,8 @@ header.scroll-down {
     padding: 10px;
     
     .section-home-img{
-
-    
       position: relative;
+      @include mediano-imagenes;
       &::before{
         content: '';
         position: absolute;
@@ -255,6 +255,9 @@ header.scroll-down {
         height: 100%;
         top: 0;
         left: 0;
+      }
+      img{
+        @include mediano-imagenes;
       }
 
     }
@@ -279,10 +282,11 @@ header.scroll-down {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: map-get($colores, color-spotify-verde-hex);
+    @include bg(color-spotify-verde-hex);
 
-    color: map-get($colores, color-spotify-negro-hex);
+    @include text(color-spotify-negro-hex);
     h1 {
+      text-align: center;
       font-size: 45px;
     }
   }
@@ -290,13 +294,123 @@ header.scroll-down {
     width: 100%;
     margin: auto;
     h2 {
-      color: map-get($colores, color-spotify-negro-hex);
+      @include text(color-spotify-negro-hex);
     }
     p {
       text-align: justify;
     }
   }
 }
+
+//=========plan servicio section==========
+.plan-servicio {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .servicio-container {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    /* background: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h2 {
+      text-align: center;
+      font-size: 45px;
+    }
+    .planes-container {
+      /* background: chartreuse; */
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .plan-grid {
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .plan-col {
+          margin: 20px;
+          width: 500px;
+          height: 500px;
+          overflow: hidden;
+          @include bg(color-spotify-negro-hex);
+          box-shadow: 8px 8px 0px map-get($colores , color-spotify-verde-rgba-3);
+          border-radius: 30px;
+          box-sizing: border-box;
+          background-clip: content-box;
+          transition: all ease-in-out 0.3s;
+          .plan-img {
+            width: 500px;
+            height: 250px;
+            overflow: hidden;
+          }
+          .plan-content {
+            width: 500px;
+            height: 250px;
+            box-sizing: border-box;
+            padding: 10px;
+            h3 {
+              @include text(color-spotify-verde-hex);
+            }
+            p {
+              @include text(color-spotify-blanco-hex);
+            }
+            .plan-link {
+              width: 100px;
+              height: 50px;
+              @include center;
+              flex-direction: column;
+              text-align: center;
+              @include bg(color-spotify-verde-hex);
+              @include text(color-spotify-blanco-hex);
+              border-radius: 20px;
+              transition: all ease-in-out 0.3s;
+              &:hover {
+                @include bg(hover-1);
+                box-shadow: 0px 10px 15px -3px rgba(255, 255, 255, 0.1);
+              }
+            }
+            .plan-content-service {
+              .fa-star,
+              .fa-star-half {
+                @include text(color-oro);
+              }
+              .fa-server,
+              .fa-database,
+              .fa-exchange-alt {
+                @include text(color-gris-1);
+              }
+              .fa-expeditedssl {
+                @include text(color-ssl);
+              }
+            }
+            .plan-precio{
+              h4{
+                @include text(color-spotify-blanco-hex);
+
+              }
+            }
+          }
+        }
+
+        .plan-col:hover {
+          box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.2),
+            inset 0px 0px 7px 1px rgba(255, 255, 255, 0.2);
+          transform: translateY(-5px);
+        }
+      }
+    }
+  }
+}
+
 //=========contacto desing=============
 
 //=========contacto desing=============
@@ -409,114 +523,6 @@ header.scroll-down {
             box-shadow: 0px 0px 7px 5px
               map-get($colores, color-spotify-verde-rgba);
           }
-        }
-      }
-    }
-  }
-}
-
-//=========plan servicio section==========
-.plan-servicio {
-  width: 100%;
-  height: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  .servicio-container {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    /* background: red; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    h2 {
-      font-size: 45px;
-    }
-    .planes-container {
-      /* background: chartreuse; */
-      width: 100%;
-      height: auto;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      .plan-grid {
-        width: 100%;
-        height: auto;
-        box-sizing: border-box;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        .plan-col {
-          margin: 20px;
-          width: 500px;
-          height: 500px;
-          overflow: hidden;
-          @include bg(color-spotify-negro-hex);
-          box-shadow: 8px 8px 0px map-get($colores , color-spotify-verde-rgba-3);
-          border-radius: 30px;
-          box-sizing: border-box;
-          background-clip: content-box;
-          transition: all ease-in-out 0.3s;
-          .plan-img {
-            width: 500px;
-            height: 250px;
-            overflow: hidden;
-          }
-          .plan-content {
-            width: 500px;
-            height: 250px;
-            box-sizing: border-box;
-            padding: 10px;
-            h3 {
-              @include text(color-spotify-verde-hex);
-            }
-            p {
-              @include text(color-spotify-blanco-hex);
-            }
-            .plan-link {
-              width: 100px;
-              height: 50px;
-              @include center;
-              flex-direction: column;
-              text-align: center;
-              @include bg(color-spotify-verde-hex);
-              @include text(color-spotify-blanco-hex);
-              border-radius: 20px;
-              transition: all ease-in-out 0.3s;
-              &:hover {
-                @include bg(hover-1);
-                box-shadow: 0px 10px 15px -3px rgba(255, 255, 255, 0.1);
-              }
-            }
-            .plan-content-service {
-              .fa-star,
-              .fa-star-half {
-                @include text(color-oro);
-              }
-              .fa-server,
-              .fa-database,
-              .fa-exchange-alt {
-                @include text(color-gris-1);
-              }
-              .fa-expeditedssl {
-                @include text(color-ssl);
-              }
-            }
-            .plan-precio{
-              h4{
-                @include text(color-spotify-blanco-hex);
-
-              }
-            }
-          }
-        }
-
-        .plan-col:hover {
-          box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.2),
-            inset 0px 0px 7px 1px rgba(255, 255, 255, 0.2);
-          transform: translateY(-5px);
         }
       }
     }
