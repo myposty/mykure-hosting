@@ -1,0 +1,40 @@
+//flex box
+@mixin flex-box($flex,$item,$content) {
+    display: $flex;
+    justify-items: $item;
+    justify-content: $content;
+}
+
+//centrado al inicio
+@mixin start {
+    @include flex-box(flex,start,start);
+}
+
+//centrado en el centro
+@mixin center {
+    @include flex-box(flex,center,center);
+}
+//centrado al final
+@mixin end {
+    @include flex-box(flex,end,end);
+    
+}
+
+
+//espacio entre cajas
+@mixin beetween{
+    @include flex-box(flex,center,space-between);
+}
+
+//wrap mixins
+//flex wrap
+@mixin flex-wrap($flex,$wrap,$content) {
+    display: $flex;
+    flex-wrap: $wrap;
+    justify-content: $content;
+}
+
+//wrap centrado en el medio
+@mixin wrap-center{
+    @include flex-wrap(flex,wrap,center);
+}

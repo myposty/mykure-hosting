@@ -1,0 +1,20 @@
+//tamaños de imagenes en pixeles
+$medidas-imagenes:(
+    pequeño:150px,
+    mediano:200px,
+    grande:450px,
+  );
+  
+  @mixin pequeño-imagenes {
+    width: map-get($medidas-imagenes, pequeño );
+    height: map-get($medidas-imagenes, pequeño);
+  }
+  @mixin mediano-imagenes {
+    width: map-get($medidas-imagenes, mediano );
+    height: map-get($medidas-imagenes, mediano );
+  }
+  @mixin grande-imagenes {
+    width: map-get($medidas-imagenes, grande );
+    height: map-get($medidas-imagenes, grande );
+  }
+  //end responsive desing

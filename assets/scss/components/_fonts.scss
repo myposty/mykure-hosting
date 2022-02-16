@@ -1,0 +1,38 @@
+//diseños de fuentes
+//FUENTE SFPRO DISPLAY HEAVY
+@font-face {
+    font-family: "SFProDisplayHeavy";
+    src: url(../fonts/sfpro/SFProDisplay-Heavy-1.ttf);
+    font-weight: normal;
+    font-style: normal;
+  }
+  //FUENTE SFPRO DISPLAY REGULAR
+  @font-face {
+    font-family: "SFProDisplayRegular";
+    src: url(../fonts/sfpro/SFProDisplay-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  //tipografia
+  $font:(
+    SFProDisplayHeavy: "SFProDisplayHeavy",
+  SFProDisplayRegular: "SFProDisplayRegular",
+  );
+
+  @mixin sfproheavy {
+    font-family: map-get($font , SFProDisplayHeavy );
+  }
+
+  @mixin sfproregular {
+    font-family: map-get($font , SFProDisplayRegular );
+  }
+
+
+
+//tamaño de fuente
+$text-size: (
+  small: 15px,
+  medium: 2.5rem,
+  large: 40px,
+);

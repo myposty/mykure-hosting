@@ -1,0 +1,64 @@
+//colores de epotifai
+//hexadecimales
+$colores: (
+  /* color-spotify-verde-hex: #1db954, */
+  color-spotify-verde-hex: #268a69,
+  color-spotify-blanco-hex: #ffffff,
+  /* color-spotify-negro-hex: #191414, */
+  color-spotify-negro-hex: #191919,
+  color-fb-azul: #4267b2,
+  color-insta:#dc2743,
+  color-email: #ea4335,
+  color-oro: #ffbf00,
+  color-blanco: #fff,
+  color-ssl: #04e762,
+  color-gris-1: #8e9aaf,
+  color-oscuro: #222222,
+  //rgba
+  /* color-spotify-verde-rgba: rgba(29, 185, 84, 1), */
+  /* color-spotify-verde-rgba-3: rgba(29, 185, 84, .3), */
+  color-spotify-verde-rgba-3: rgba(25, 25, 25, .3),
+  color-spotify-blanco-rgba: rgba(255, 255, 255, 1),
+  color-spotify-verde-rgba: rgba(38, 138, 105, 1),
+  color-spotify-negro-rgba: rgba(25, 25, 25, 1),
+  color-blanco-rgba-015:rgba(255, 255, 255, 0.15),
+  color-blanco-rgba-0:rgba(255, 255, 255, 0),
+  //hover colors
+  hover-1: rgba(145, 145, 145,1),
+
+  //contraste
+  contraste-1: rgba(145, 145, 145, 0.2),
+);
+//gradiente
+$gradient: linear-gradient(180deg, map-get($colores, color-blanco-rgba-015), map-get($colores, color-blanco-rgba-0));
+@mixin gradient {
+  background-image:$gradient;
+}
+//background color
+@mixin bg($color) {
+  background-image: $gradient;
+  background-color: map-get($colores , $color);
+}
+//color de texto
+@mixin text($color) {
+  color:map-get($colores, $color) ;
+}
+
+  //rgb
+  // $insta-colors:#405DE6, #5B51D8, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80;
+  $insta-colors: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  
+  //contraste
+  $contraste-1: rgb(145, 145, 145);
+  //contraste rbga
+  $contraste-rgba-1:/* rgba(145, 145, 145,.3) */ rgba(34, 34, 34, 0.1);
+  //colores de texto
+  $text-color1: #222222;
+  
