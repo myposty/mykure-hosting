@@ -124,6 +124,7 @@ header {
                 &:hover{
                   @include bg(color-spotify-verde-hex);
                   @include text(color-spotify-blanco-hex);
+                  box-shadow: 0px 10px 15px -3px rgba(255,255,255,0.1);
                   img{
                     transform: translateY(-5px);
                   }
