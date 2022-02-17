@@ -584,6 +584,7 @@ footer {
       justify-content: center;
       width: calc(100% * 1);
       overflow: hidden;
+      position: relative;
       /* background: red; */
       img {
         @include pequeño-imagenes();

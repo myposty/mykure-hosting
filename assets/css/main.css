@@ -1025,6 +1025,7 @@ footer .footer-container .footer-about-us {
           justify-content: center;
   width: calc(100% * 1);
   overflow: hidden;
+  position: relative;
   /* background: red; */
 }
 
