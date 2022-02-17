@@ -62,7 +62,9 @@ header {
             cursor: pointer;
             &:hover{
               box-shadow: 0px 10px 15px -3px rgba(255, 255, 255, 0.1);
+            
             }
+            
             .open,
             .close{
               width: 50px;
@@ -2696,3 +2698,5 @@ footer {
   background-color: rgba(25,135,84, 1);
   display: none;
 }
+
+
