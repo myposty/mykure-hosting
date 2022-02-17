@@ -7,6 +7,10 @@
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     text-transform: capitalize;
     transition: all ease-in-out 0.3s;
+    ::selection{
+      @include bg(color-spotify-negro-hex);
+      @include text(color-spotify-blanco-hex);
+    }
   }
 
   body {
