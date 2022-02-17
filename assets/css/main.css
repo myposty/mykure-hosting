@@ -529,11 +529,18 @@ header.scroll-down {
   height: 200px;
 }
 
+.section-home .section-home-container .section-home-desc {
+  width: 100%;
+}
+
 .section-home .section-home-container .section-home-desc h1 {
+  width: 100%;
+  text-align: start;
   font-size: 45px;
 }
 
 .section-home .section-home-container .section-home-desc p {
+  width: 100%;
   text-align: justify;
   font-size: 20px;
 }
