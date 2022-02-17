@@ -2182,6 +2182,10 @@ footer .footer-container .footer-links ul li a:hover {
     width: 640px;
     height: 640px;
   }
+  .section-home .section-home-container .section-home-img img {
+    width: 640px;
+    height: 640px;
+  }
   .section-home .section-home-container .section-home-desc {
     width: 640px;
     height: 640px;
