@@ -1,0 +1,1 @@
+este es el un diseño web de mykure hosting no tiene ninguna funcionalidad, actualmente en desarrollo y en modificaciones
